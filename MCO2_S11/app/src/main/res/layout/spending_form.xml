@@ -43,7 +43,7 @@
         tools:layout_editor_absoluteY="272dp" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/catSpinner"
         android:layout_width="379dp"
         android:layout_height="43dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,18 +51,28 @@
         tools:layout_editor_absoluteY="377dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/photoB"
         android:layout_width="383dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="216dp"
-        android:text="Button"
+        android:layout_marginBottom="220dp"
+        android:background="#FFFFFF"
+        android:text="Take a Photo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.535"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/photoTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="456dp" />
+
+    <TextView
+        android:id="@+id/desTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Description"
@@ -72,34 +82,14 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="252dp" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Category"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="355dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Photo"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="455dp" />
-
     <Button
         android:id="@+id/button2"
         android:layout_width="198dp"
         android:layout_height="49dp"
         android:layout_marginBottom="76dp"
+        android:background="#212F42"
         android:text="Add Transaction"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -125,4 +115,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="87dp" />
+
+    <TextView
+        android:id="@+id/catTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="356dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
