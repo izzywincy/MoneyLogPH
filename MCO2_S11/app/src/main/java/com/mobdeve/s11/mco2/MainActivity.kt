@@ -1,6 +1,8 @@
 package com.mobdeve.s11.mco2
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -18,5 +20,12 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+
+        val spendingButton = findViewById<Button>(R.id.spendingFormBtn)
+        spendingButton.setOnClickListener{
+            val intent = Intent(this, SpendingFormActivity::class.java)
+            startActivity(intent)
+
+        }
     }
 }
